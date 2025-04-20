@@ -1,11 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { TripService } from '../../trip.service';
+import { RequestTripDto } from '../dto/request-trip.dto';
 
 @Injectable()
-export class AssignDriverHandler {
+export class RequestTripHandler {
   constructor(private readonly tripService: TripService) {}
 
-  async execute(tripId: string, driverId: string) {
-    return this.tripService.assignDriver(tripId, driverId);
+  async execute(dto: RequestTripDto) {
+    return this.tripService.requestTrip(dto);
   }
 }

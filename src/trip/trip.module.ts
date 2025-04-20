@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { TripController } from './trip.controller';
-import { TripService } from './trip.service';
+import { TripController } from './apis/trip.controller';
+import { TripService } from './domain-service/trip.service';
 
 @Module({
   controllers: [TripController],

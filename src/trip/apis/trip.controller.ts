@@ -1,8 +1,8 @@
 import { Body, Controller, Param, Patch, Post } from '@nestjs/common';
-import { TripStatusEnum } from './domain/enums/trip-status.enum';
-import { FareAmountDto } from './dto/fare-amount.dto';
-import { RequestTripDto } from './dto/request-trip.dto';
-import { TripService } from './trip.service';
+import { RequestTripDto } from '../../service-area/application/dto/request-trip.dto';
+import { FareAmountDto } from '../application/dto/fare-amount.dto';
+import { TripService } from '../domain-service/trip.service';
+import { TripStatusEnum } from '../domain/enums/trip-status.enum';
 
 @Controller('trips')
 export class TripController {

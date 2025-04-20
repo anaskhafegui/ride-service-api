@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { TripStatusEnum } from './domain/enums/trip-status.enum';
 import { Trip } from './domain/trip.aggregate';
 import { TripStatus } from './domain/value-objects/trip-status.vo';
-import { RequestTripDto } from './dto/request-trip.dto';
+import { RequestTripDto } from './use-cases/dto/request-trip.dto';
 
 @Injectable()
 export class TripService {

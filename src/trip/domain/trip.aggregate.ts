@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { RequestTripDto } from '../dto/request-trip.dto';
+import { RequestTripDto } from '../use-cases/dto/request-trip.dto';
 import { TripStatusEnum } from './enums/trip-status.enum';
 import { CarType } from './value-objects/car-type.vo';
 import { Coordinates } from './value-objects/coordinates.vo';

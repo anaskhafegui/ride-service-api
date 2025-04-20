@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { TripService } from '../../trip.service';
+import { TripService } from '../../domain-service/trip.service';
 
 @Injectable()
 export class AuthorizeFareHandler {
