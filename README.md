@@ -1,7 +1,3 @@
-Here’s a clean, professional `README.md` to help you document and onboard others to your **Trip Dispatching Module** using **NestJS + PostgreSQL** with **DDD + CQRS + Event-Driven Architecture**:
-
----
-
 ## 🚖 Trip Dispatching Service (NestJS + PostgreSQL)
 
 A modular monolithic backend service that manages trip lifecycle in a ride-hailing application.  
