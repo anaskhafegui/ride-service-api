@@ -123,5 +123,3 @@ npm run start:dev
 Open to contributions — just follow the DDD structure and split commands/queries/events properly.
 
 ---
-
-Let me know if you'd like to customize this for **Prisma**, **Swagger**, or **Docker** environments!
