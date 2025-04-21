@@ -1,4 +1,5 @@
 import { Column, Entity, Index, PrimaryGeneratedColumn } from 'typeorm';
+import { PriceDependOn } from '../../../../shared/enums/price-depend-on.enum';
 
 @Entity('service_areas')
 @Index('service_area_polygon_gix', ['polygon'], { spatial: true }) // Spatial index
@@ -15,4 +16,10 @@ export class ServiceAreaEntity {
 
   @Column({ default: true })
   active: boolean;
+
+  @Column({
+    type: 'enum',
+    enum: PriceDependOn,
+  })
+  priceDependOn: PriceDependOn;
 }
